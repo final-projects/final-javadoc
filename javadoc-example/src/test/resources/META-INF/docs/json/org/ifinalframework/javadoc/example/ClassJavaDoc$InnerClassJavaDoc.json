@@ -1,0 +1,10 @@
+{
+  "class" : "org.ifinalframework.javadoc.example.ClassJavaDoc.InnerClassJavaDoc",
+  "name" : "ClassJavaDoc.InnerClassJavaDoc",
+  "summary" : "InnerClassJavaDoc",
+  "since" : null,
+  "version" : null,
+  "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.InnerClassJavaDoc",
+  "fieldDocs" : { },
+  "methodDocs" : [ ]
+}

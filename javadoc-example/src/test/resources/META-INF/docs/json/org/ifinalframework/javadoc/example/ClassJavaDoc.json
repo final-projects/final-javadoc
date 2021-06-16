@@ -1,0 +1,83 @@
+{
+  "class" : "org.ifinalframework.javadoc.example.ClassJavaDoc",
+  "name" : "ClassJavaDoc",
+  "summary" : "ClassJavaDoc.",
+  "since" : "1.0.0",
+  "version" : "1.0.0",
+  "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc",
+  "fieldDocs" : {
+    "name" : {
+      "name" : "name",
+      "summary" : "姓名",
+      "since" : null,
+      "version" : null,
+      "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.name",
+      "type" : "java.lang.String",
+      "genericType" : "java.lang.String"
+    },
+    "age" : {
+      "name" : "age",
+      "summary" : "年龄",
+      "since" : null,
+      "version" : null,
+      "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.age",
+      "type" : "java.lang.Integer",
+      "genericType" : "java.lang.Integer"
+    },
+    "tags" : {
+      "name" : "tags",
+      "summary" : "",
+      "since" : null,
+      "version" : null,
+      "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.tags",
+      "type" : "java.util.List",
+      "genericType" : "java.util.List<java.lang.String>"
+    }
+  },
+  "methodDocs" : [ {
+    "name" : "hello",
+    "summary" : "",
+    "since" : null,
+    "version" : null,
+    "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello()",
+    "signature" : "()",
+    "flatSignature" : "()",
+    "parameters" : [ ],
+    "returnType" : "void",
+    "genericReturnType" : "void"
+  }, {
+    "name" : "hello",
+    "summary" : "Hello",
+    "since" : null,
+    "version" : null,
+    "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello(java.lang.String)",
+    "signature" : "(java.lang.String)",
+    "flatSignature" : "(String)",
+    "parameters" : [ {
+      "name" : "world",
+      "type" : "java.lang.String",
+      "summary" : "世界"
+    } ],
+    "returnType" : "void",
+    "genericReturnType" : "void"
+  }, {
+    "name" : "hello",
+    "summary" : "",
+    "since" : null,
+    "version" : null,
+    "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello(java.lang.String, java.util.List<java.lang.String>)",
+    "signature" : "(java.lang.String, java.util.List<java.lang.String>)",
+    "flatSignature" : "(String, List<String>)",
+    "parameters" : [ {
+      "name" : "world",
+      "type" : "java.lang.String",
+      "summary" : null
+    }, {
+      "name" : "args",
+      "type" : "java.util.List",
+      "summary" : null
+    } ],
+    "returnType" : "void",
+    "genericReturnType" : "void"
+  } ]
+}
