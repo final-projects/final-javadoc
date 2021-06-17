@@ -4,14 +4,14 @@
   "summary" : "ClassJavaDoc.",
   "since" : "1.0.0",
   "version" : "1.0.0",
-  "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc",
+  "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc",
   "fieldDocs" : {
     "name" : {
       "name" : "name",
       "summary" : "姓名",
       "since" : null,
       "version" : null,
-      "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.name",
+      "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc.name",
       "type" : "java.lang.String",
       "genericType" : "java.lang.String"
     },
@@ -20,7 +20,7 @@
       "summary" : "年龄",
       "since" : null,
       "version" : null,
-      "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.age",
+      "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc.age",
       "type" : "java.lang.Integer",
       "genericType" : "java.lang.Integer"
     },
@@ -29,9 +29,18 @@
       "summary" : "",
       "since" : null,
       "version" : null,
-      "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.tags",
+      "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc.tags",
       "type" : "java.util.List",
       "genericType" : "java.util.List<java.lang.String>"
+    },
+    "innerClassJavaDoc" : {
+      "name" : "innerClassJavaDoc",
+      "summary" : "",
+      "since" : null,
+      "version" : null,
+      "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc.innerClassJavaDoc",
+      "type" : "org.ifinalframework.javadoc.example.ClassJavaDoc.InnerClassJavaDoc",
+      "genericType" : "org.ifinalframework.javadoc.example.ClassJavaDoc.InnerClassJavaDoc"
     }
   },
   "methodDocs" : [ {
@@ -39,10 +48,8 @@
     "summary" : "",
     "since" : null,
     "version" : null,
-    "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello()",
-    "signature" : "()",
-    "flatSignature" : "()",
-    "parameters" : [ ],
+    "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello()",
+    "parameterDocs" : [ ],
     "returnType" : "void",
     "genericReturnType" : "void"
   }, {
@@ -50,10 +57,8 @@
     "summary" : "Hello",
     "since" : null,
     "version" : null,
-    "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello(java.lang.String)",
-    "signature" : "(java.lang.String)",
-    "flatSignature" : "(String)",
-    "parameters" : [ {
+    "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello(java.lang.String)",
+    "parameterDocs" : [ {
       "name" : "world",
       "type" : "java.lang.String",
       "summary" : "世界"
@@ -65,10 +70,8 @@
     "summary" : "",
     "since" : null,
     "version" : null,
-    "string" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello(java.lang.String, java.util.List<java.lang.String>)",
-    "signature" : "(java.lang.String, java.util.List<java.lang.String>)",
-    "flatSignature" : "(String, List<String>)",
-    "parameters" : [ {
+    "signature" : "org.ifinalframework.javadoc.example.ClassJavaDoc.hello(java.lang.String, java.util.List<java.lang.String>)",
+    "parameterDocs" : [ {
       "name" : "world",
       "type" : "java.lang.String",
       "summary" : null

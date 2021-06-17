@@ -15,7 +15,6 @@ import springfox.documentation.builders.PropertySpecificationBuilder;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spi.schema.ModelPropertyBuilderPlugin;
 import springfox.documentation.spi.schema.contexts.ModelPropertyContext;
-import springfox.documentation.swagger.common.SwaggerPluginSupport;
 
 /**
  * ModelPropertyJavaDocBuilderPlugin.
@@ -42,7 +41,13 @@ public class ModelPropertyJavaDocBuilderPlugin implements ModelPropertyBuilderPl
 
         final Class<?> erasedType = context.getOwner().getType().getErasedType();
 
-        final ClassDoc classDoc = ClassDoc.load(erasedType);
+        final Field field = ReflectionUtils.findField(erasedType, name);
+
+        if (Objects.isNull(field)) {
+            return;
+        }
+
+        final ClassDoc classDoc = ClassDoc.load(field.getDeclaringClass());
 
         if (Objects.isNull(classDoc)) {
             return;
@@ -57,7 +62,7 @@ public class ModelPropertyJavaDocBuilderPlugin implements ModelPropertyBuilderPl
 
     @Override
     public boolean supports(final DocumentationType documentationType) {
-        return SwaggerPluginSupport.pluginDoesApply(documentationType);
+        return true;
     }
 
 }

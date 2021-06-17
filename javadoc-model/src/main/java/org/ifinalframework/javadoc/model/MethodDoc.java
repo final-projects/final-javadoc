@@ -1,7 +1,10 @@
 package org.ifinalframework.javadoc.model;
 
+import org.ifinalframework.javadoc.model.jackson.ClassJsonDeserializer;
+
 import java.util.List;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,6 +29,7 @@ public class MethodDoc extends Doc {
      */
     private List<ParameterDoc> parameterDocs;
 
+    @JsonDeserialize(using = ClassJsonDeserializer.class)
     private Class<?> returnType;
 
 }

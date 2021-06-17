@@ -39,7 +39,7 @@ public class MethodDocJsonSerializer extends DocJsonSerializer<MethodDoc> {
             jsonGenerator.writeStringField("overriddenMethod", methodDoc.overriddenMethod().toString());
         }
 
-        jsonGenerator.writeFieldName("parameters");
+        jsonGenerator.writeFieldName("parameterDocs");
         jsonGenerator.writeStartArray();
 
         final Map<String, ParamTag> paramTags = Arrays.stream(methodDoc.paramTags())

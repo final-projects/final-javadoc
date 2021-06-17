@@ -4,7 +4,7 @@
     <parent>
         <artifactId>final-javadoc</artifactId>
         <groupId>org.ifinalframework.javadoc</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1-alpha</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,4 +16,34 @@
             <groupId>com.fasterxml.jackson.core</groupId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <doclet>org.ifinalframework.javadoc.JsonDoclet</doclet>
+                    <docletArtifacts>
+                        <docletArtifact>
+                            <groupId>org.ifinalframework.javadoc</groupId>
+                            <artifactId>javadoc-doclet</artifactId>
+                            <version>0.0.1-alpha</version>
+                        </docletArtifact>
+                    </docletArtifacts>
+                    <show>private</show>
+                    <useStandardDocletOptions>false</useStandardDocletOptions>
+                    <outputDirectory>${project.basedir}/target/classes/META-INF/docs/json</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <phase>compile</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

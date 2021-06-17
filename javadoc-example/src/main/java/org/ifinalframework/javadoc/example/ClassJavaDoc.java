@@ -28,6 +28,8 @@ public class ClassJavaDoc {
 
     private List<String> tags;
 
+    private InnerClassJavaDoc innerClassJavaDoc;
+
     public void hello() {
 
     }
@@ -48,6 +50,10 @@ public class ClassJavaDoc {
      */
     public class InnerClassJavaDoc {
 
+
+        public class Inner2ClassJavaDoc{
+
+        }
     }
 
 }

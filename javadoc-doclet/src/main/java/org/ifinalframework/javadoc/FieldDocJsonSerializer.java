@@ -5,6 +5,7 @@ import java.lang.reflect.Field;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
+import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.FieldDoc;
 
 /**
@@ -22,6 +23,7 @@ public class FieldDocJsonSerializer extends DocJsonSerializer<FieldDoc> {
         throws IOException {
         jsonGenerator.writeStartObject();
         common(jsonGenerator, fieldDoc);
+
 
         jsonGenerator.writeStringField("type", fieldDoc.type().qualifiedTypeName());
         jsonGenerator.writeStringField("genericType", fieldDoc.type().toString());

@@ -1,5 +1,8 @@
 package org.ifinalframework.javadoc.model;
 
+import org.ifinalframework.javadoc.model.jackson.ClassJsonDeserializer;
+
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +17,7 @@ import lombok.Setter;
 @Getter
 public class FieldDoc extends Doc {
 
+    @JsonDeserialize(using = ClassJsonDeserializer.class)
     private Class<?> type;
 
 }
